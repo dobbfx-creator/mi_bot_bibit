@@ -1,0 +1,26 @@
+name: "mi_bot_bibit"
+language: "python"
+python:
+  version: "3.10"
+  install:
+    - pip install -r requirements.txt
+entrypoints:
+  # Smoke test rápido (importa módulos y corre escenarios mínimos)
+  - name: "smoke"
+    cmd: "python scripts/smoke_test.py"
+  # Backtest con config por defecto
+  - name: "backtest"
+    cmd: "python backtest.py --use-fixed"
+  # Live/Demo (ajustá si tu entry real es otro)
+  - name: "run-demo"
+    cmd: "python main.py --demo"
+env:
+  required:
+    - BYBIT_API_KEY
+    - BYBIT_API_SECRET
+  optional:
+    - TELEGRAM_BOT_TOKEN
+    - TELEGRAM_CHAT_ID
+artifacts:
+  - "logs/*.log"
+  - "outputs/**/*.csv"

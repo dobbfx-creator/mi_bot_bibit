@@ -2478,3 +2478,4 @@ Request → POST https://api-demo.bybit.com/v5/order/create: {"category": "linea
 2025-11-06 20:23:53,593 [INFO] Posiciones vivas (inicio): 0
 2025-11-06 20:23:53,594 [INFO] SOLUSDT marcado cerrado localmente (no estAA en exchange).
 2025-11-06 20:23:53,595 [INFO] BTCUSDT marcado cerrado localmente (no estAA en exchange).
+2025-11-08 04:08:59,857 [INFO] Posiciones vivas (inicio): 0

@@ -1,0 +1,3 @@
+python-dotenv>=1.0.0
+pydantic>=2.7.0 ; python_version>="3.10"  # si no usás Pydantic, podés quitarlo
+requests>=2.32.0
