@@ -1,0 +1,16 @@
+{
+  "name": "Trailing SHORT activar 0.5% y cierre en BE",
+  "side": "SHORT",
+  "entry": 100.0,
+  "precio_sequence": [
+    99.9,
+    99.7,
+    99.51,
+    99.49,
+    99.45,
+    100.0,
+    100.2
+  ],
+  "expect_activation_at_index": 3,
+  "expect_close_at_index": 5
+}

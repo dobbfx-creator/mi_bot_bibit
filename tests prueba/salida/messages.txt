@@ -1,0 +1,19 @@
+[1] 2025-10-20 14:31:44 · sendMessage
+Fabi bot BiBIT:
+🔄 HEARTBEAT
+Capital total: 49,113.55 USDT
+Hora: 18:32
+
+Estado de los pares:
+
+Total de órdenes ejecutadas en 24h: 29
+------------------------------------------------------------
+[2] 2025-10-20 14:31:44 · sendMessage
+✅ Parcial ejecutado | BTCUSDT
+Dirección: LONG
+Fracción: 0.50
+Ganancia realizada: 12.34 USDT 💰
+Cantidad restante: 0.0025
+Precio ejecución: 108000.0000
+Nivel alcanzado: 0.50R 🎯
+------------------------------------------------------------

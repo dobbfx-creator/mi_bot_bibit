@@ -1,0 +1,12 @@
+[
+  {
+    "ts": "2025-10-20 14:31:44",
+    "tipo": "sendMessage",
+    "texto": "Fabi bot BiBIT:\n🔄 HEARTBEAT\nCapital total: 49,113.55 USDT\nHora: 18:32\n\nEstado de los pares:\n\nTotal de órdenes ejecutadas en 24h: 29"
+  },
+  {
+    "ts": "2025-10-20 14:31:44",
+    "tipo": "sendMessage",
+    "texto": "✅ Parcial ejecutado | BTCUSDT\nDirección: LONG\nFracción: 0.50\nGanancia realizada: 12.34 USDT 💰\nCantidad restante: 0.0025\nPrecio ejecución: 108000.0000\nNivel alcanzado: 0.50R 🎯"
+  }
+]

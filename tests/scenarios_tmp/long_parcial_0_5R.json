@@ -1,0 +1,20 @@
+{
+  "name": "Long parcial 0.5R",
+  "side": "LONG",
+  "entry": 100.0,
+  "precios": [
+    100.1,
+    100.2,
+    100.25,
+    100.5,
+    100.6
+  ],
+  "expect_partial_at_index": 3,
+  "precio_sequence": [
+    100.1,
+    100.2,
+    100.25,
+    100.5,
+    100.6
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Trailing LONG activar 0.5% y cierre en BE",
+  "side": "LONG",
+  "entry": 100.0,
+  "precios": [
+    100.1,
+    100.3,
+    100.49,
+    100.51,
+    100.55,
+    100.0,
+    99.8
+  ],
+  "expect_activation_at_index": 3,
+  "expect_close_at_index": 5,
+  "precio_sequence": [
+    100.1,
+    100.3,
+    100.49,
+    100.51,
+    100.55,
+    100.0,
+    99.8
+  ]
+}

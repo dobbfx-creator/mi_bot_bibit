@@ -1,0 +1,84 @@
+{
+  "pares": {
+    "ETHUSDT": {
+      "posicion_abierta": false,
+      "direccion": "VENTA (SHORT)",
+      "entrada_precio": 3539.7,
+      "sl_pct": 1.0,
+      "tp_pct": 3.0,
+      "entradas": 2,
+      "trailing": {
+        "direccion": "SHORT",
+        "precio_entrada": 3539.93,
+        "sl": null,
+        "tp": null,
+        "activo": true,
+        "high_water": 3539.93,
+        "low_water": 3539.93,
+        "activar_pct": 1.0,
+        "buffer_pct": 0.3,
+        "min_mov_sl_pct": 0.1
+      },
+      "qty": 0.28,
+      "condiciones_al_entrar": {},
+      "ts_entry": 1762234231.309,
+      "_prev_qty": 0.28,
+      "_prev_qty_tr": 0.28,
+      "_partial_base_qty": 0.28,
+      "sl_manual": 3575.09
+    },
+    "SOLUSDT": {
+      "posicion_abierta": false,
+      "direccion": "COMPRA (LONG)",
+      "entrada_precio": 153.0,
+      "sl_pct": 1.0,
+      "tp_pct": 3.0,
+      "entradas": 1,
+      "qty": 8.0,
+      "trailing": {
+        "direccion": "LONG",
+        "precio_entrada": 153.0,
+        "sl": null,
+        "tp": null,
+        "activo": false,
+        "high_water": 154.2,
+        "low_water": 153.0,
+        "activar_pct": 1.0,
+        "buffer_pct": 0.3,
+        "min_mov_sl_pct": 0.1
+      },
+      "condiciones_al_entrar": {},
+      "_prev_qty": 8.0,
+      "_prev_qty_tr": 8.0,
+      "_partial_base_qty": 8.0,
+      "sl_manual": 151.47
+    },
+    "BTCUSDT": {
+      "posicion_abierta": false,
+      "direccion": "COMPRA (LONG)",
+      "entrada_precio": 100903.7,
+      "sl_pct": 1.0,
+      "tp_pct": 3.0,
+      "entradas": 1,
+      "qty": 0.013,
+      "trailing": {
+        "direccion": "LONG",
+        "precio_entrada": 100903.7,
+        "sl": null,
+        "tp": null,
+        "activo": false,
+        "high_water": 101091.9,
+        "low_water": 100903.7,
+        "activar_pct": 1.0,
+        "buffer_pct": 0.3,
+        "min_mov_sl_pct": 0.1
+      },
+      "condiciones_al_entrar": {},
+      "_prev_qty": 0.013,
+      "_prev_qty_tr": 0.013,
+      "_partial_base_qty": 0.013,
+      "sl_manual": 99894.6
+    }
+  },
+  "ordenes_24h": 25
+}

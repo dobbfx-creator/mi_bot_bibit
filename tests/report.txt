@@ -1,0 +1,13 @@
+Resultados: 0/4 PASSED
+- Long parcial 0.5R: FAIL (expected=None, actual=None)
+  cfg → take_pct=None  relacion=None  at_R=None  paso_pct=None  target=None
+  first_trigger_price=None  seq=None
+- Trailing LONG activar 0.5% y cierre en BE: FAIL (expected=None, actual=None)
+  cfg → take_pct=None  relacion=None  at_R=None  paso_pct=None  target=None
+  first_trigger_price=None  seq=None
+- Short parcial 0.5R: FAIL (expected=None, actual=None)
+  cfg → take_pct=None  relacion=None  at_R=None  paso_pct=None  target=None
+  first_trigger_price=None  seq=None
+- Trailing SHORT activar 0.5% y cierre en BE: FAIL (expected=None, actual=None)
+  cfg → take_pct=None  relacion=None  at_R=None  paso_pct=None  target=None
+  first_trigger_price=None  seq=None

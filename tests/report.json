@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Long parcial 0.5R",
+    "error": "core._alcanzo_objetivo_parcial no existe"
+  },
+  {
+    "name": "Trailing LONG activar 0.5% y cierre en BE",
+    "error": "core._alcanzo_objetivo_parcial no existe"
+  },
+  {
+    "name": "Short parcial 0.5R",
+    "error": "core._alcanzo_objetivo_parcial no existe"
+  },
+  {
+    "name": "Trailing SHORT activar 0.5% y cierre en BE",
+    "error": "core._alcanzo_objetivo_parcial no existe"
+  }
+]

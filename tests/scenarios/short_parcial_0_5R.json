@@ -1,0 +1,14 @@
+{
+  "name": "Short parcial 0.5R",
+  "side": "SHORT",
+  "entry": 100.0,
+  "precio_sequence": [
+    99.9,
+    99.8,
+    99.7,
+    99.5,
+    99.4
+  ],
+  "expect_partial_at_index": 3,
+  "notes": "Con take_pct=3 y R=3, 0.5R ~ -0.5%. Desde 100 \u2192 target ~99.5."
+}

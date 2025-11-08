@@ -1,0 +1,371 @@
+2025-11-04 19:09:45,226 [INFO] Posiciones vivas (inicio): 0
+2025-11-04 19:09:45,304 [INFO] ETHUSDT marcado cerrado localmente (no estAA en exchange).
+2025-11-04 19:09:45,304 [INFO] BTCUSDT marcado cerrado localmente (no estAA en exchange).
+2025-11-04 19:10:51 [INFO] core: ▶ Apertura manual: alinear SL/TP {'simbolo': 'BTCUSDT', 'side': 'LONG', 'sl': 99894.663, 'tp': 103930.811}  —  (logging_ex.py:41 __enter__)
+2025-11-04 19:10:54 [INFO] core: ✔ Apertura manual: alinear SL/TP OK  —  (logging_ex.py:46 __exit__)
+2025-11-04 19:10:55 [INFO] core: ▶ Apertura manual: alinear SL/TP {'simbolo': 'SOLUSDT', 'side': 'LONG', 'sl': 151.47, 'tp': 157.59}  —  (logging_ex.py:41 __enter__)
+2025-11-04 19:10:58 [INFO] core: ✔ Apertura manual: alinear SL/TP OK  —  (logging_ex.py:46 __exit__)
+2025-11-04 19:10:59 [INFO] core: ▶ Heartbeat: alinear SL/TP {'simbolo': 'BTCUSDT', 'side': 'LONG', 'sl': 99894.663, 'tp': 103930.811}  —  (logging_ex.py:41 __enter__)
+2025-11-04 19:11:01 [INFO] core: ✔ Heartbeat: alinear SL/TP OK  —  (logging_ex.py:46 __exit__)
+2025-11-04 19:11:01 [INFO] core: ▶ Heartbeat: alinear SL/TP {'simbolo': 'SOLUSDT', 'side': 'LONG', 'sl': 151.47, 'tp': 157.59}  —  (logging_ex.py:41 __enter__)
+2025-11-04 19:11:02 [INFO] core: ✔ Heartbeat: alinear SL/TP OK  —  (logging_ex.py:46 __exit__)
+2025-11-04 19:11:13,175 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:11:14,678 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.830 (orden no colocada)
+2025-11-04 19:11:14,678 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.830 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:11:14,678 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:11:14,678 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:11:15,830 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:11:17,337 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.947 (orden no colocada)
+2025-11-04 19:11:17,337 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.947 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:11:17,337 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:11:17,337 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:11:25,755 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:11:27,975 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.634 (orden no colocada)
+2025-11-04 19:11:27,975 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.634 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:11:27,975 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:11:27,975 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:11:29,827 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:11:30,611 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.996 (orden no colocada)
+2025-11-04 19:11:30,611 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.996 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:11:30,611 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:11:30,611 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:11:42,008 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:11:43,514 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.588 (orden no colocada)
+2025-11-04 19:11:43,514 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.588 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:11:43,514 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:11:43,514 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:11:45,014 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:11:46,614 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.919 (orden no colocada)
+2025-11-04 19:11:46,614 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.919 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:11:46,614 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:11:46,614 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:11:56,470 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:11:57,966 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.582 (orden no colocada)
+2025-11-04 19:11:57,966 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.582 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:11:57,966 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:11:57,966 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:11:59,118 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:12:01,343 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.937 (orden no colocada)
+2025-11-04 19:12:01,343 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.937 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:12:01,343 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:12:01,343 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:12:14,580 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:12:16,093 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.706 (orden no colocada)
+2025-11-04 19:12:16,093 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.706 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:12:16,093 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:12:16,093 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:12:17,961 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:12:20,203 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.954 (orden no colocada)
+2025-11-04 19:12:20,203 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.954 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:12:20,203 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:12:20,203 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:12:34,877 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:12:36,391 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.954 (orden no colocada)
+2025-11-04 19:12:36,391 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.954 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:12:36,391 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:12:36,391 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:12:37,541 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:12:38,330 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.018 (orden no colocada)
+2025-11-04 19:12:38,330 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.018 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:12:38,330 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:12:38,330 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:12:48,972 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:12:49,759 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.810 (orden no colocada)
+2025-11-04 19:12:49,759 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.810 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:12:49,759 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:12:49,759 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:12:52,342 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:12:53,822 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.963 (orden no colocada)
+2025-11-04 19:12:53,822 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.963 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:12:53,822 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:12:53,822 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:05,900 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:13:07,411 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.673 (orden no colocada)
+2025-11-04 19:13:07,411 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.673 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:07,411 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:07,412 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:09,258 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:13:10,761 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.916 (orden no colocada)
+2025-11-04 19:13:10,761 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.916 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:10,761 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:10,761 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:19,559 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:13:20,345 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.582 (orden no colocada)
+2025-11-04 19:13:20,346 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.582 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:20,346 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:20,346 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:21,497 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:13:23,004 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.873 (orden no colocada)
+2025-11-04 19:13:23,004 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.873 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:23,004 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:23,004 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:34,727 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:13:36,261 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.569 (orden no colocada)
+2025-11-04 19:13:36,261 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.569 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:36,261 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:36,261 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:38,867 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:13:39,665 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.876 (orden no colocada)
+2025-11-04 19:13:39,665 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.876 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:39,665 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:39,665 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:49,829 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:13:50,617 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.771 (orden no colocada)
+2025-11-04 19:13:50,618 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.771 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:50,618 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:50,618 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:13:52,508 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:13:54,698 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.905 (orden no colocada)
+2025-11-04 19:13:54,699 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.905 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:13:54,699 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:13:54,699 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:05,369 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:14:06,851 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.856 (orden no colocada)
+2025-11-04 19:14:06,851 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.856 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:06,851 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:06,851 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:08,718 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:14:10,209 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.909 (orden no colocada)
+2025-11-04 19:14:10,210 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.909 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:10,210 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:10,210 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:21,452 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:14:22,945 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.837 (orden no colocada)
+2025-11-04 19:14:22,946 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.837 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:22,946 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:22,946 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:24,817 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:14:25,606 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.930 (orden no colocada)
+2025-11-04 19:14:25,606 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.930 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:25,606 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:25,606 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:37,708 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:14:39,201 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.804 (orden no colocada)
+2025-11-04 19:14:39,201 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.804 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:39,201 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:39,201 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:41,041 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:14:41,832 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.996 (orden no colocada)
+2025-11-04 19:14:41,832 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.996 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:41,832 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:41,832 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:52,044 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:14:53,542 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.797 (orden no colocada)
+2025-11-04 19:14:53,542 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.797 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:53,542 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:53,542 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:14:55,407 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:14:56,198 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.948 (orden no colocada)
+2025-11-04 19:14:56,199 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.948 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:14:56,199 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:14:56,199 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:08,281 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:15:10,533 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.850 (orden no colocada)
+2025-11-04 19:15:10,533 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.850 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:10,533 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:10,533 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:11,326 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:15:12,116 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.938 (orden no colocada)
+2025-11-04 19:15:12,116 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.938 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:12,117 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:12,117 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:21,225 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:15:22,756 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.974 (orden no colocada)
+2025-11-04 19:15:22,756 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.974 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:22,757 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:22,757 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:23,916 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:15:25,440 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.962 (orden no colocada)
+2025-11-04 19:15:25,440 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.962 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:25,441 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:25,441 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:37,183 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:15:38,679 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.961 (orden no colocada)
+2025-11-04 19:15:38,679 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.961 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:38,679 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:38,680 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:40,169 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:15:41,680 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.019 (orden no colocada)
+2025-11-04 19:15:41,680 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.019 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:41,680 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:41,680 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:52,234 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:15:53,728 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.935 (orden no colocada)
+2025-11-04 19:15:53,728 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.935 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:53,728 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:53,728 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:15:54,883 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:15:56,427 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.085 (orden no colocada)
+2025-11-04 19:15:56,428 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.085 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:15:56,428 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:15:56,428 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:16:07,106 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:16:07,899 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.020 (orden no colocada)
+2025-11-04 19:16:07,899 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.020 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:16:07,900 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:16:07,900 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:16:10,488 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:16:12,698 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.059 (orden no colocada)
+2025-11-04 19:16:12,698 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.059 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:16:12,698 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:16:12,698 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:16:24,703 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:16:26,220 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.882 (orden no colocada)
+2025-11-04 19:16:26,220 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.882 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:16:26,220 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:16:26,220 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:16:27,358 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:16:28,147 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.978 (orden no colocada)
+2025-11-04 19:16:28,148 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=0.978 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:16:28,148 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:16:28,148 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:16:40,976 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:16:42,491 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.902 (orden no colocada)
+2025-11-04 19:16:42,491 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.902 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:16:42,491 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:16:42,491 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:16:45,056 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:16:46,553 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.059 (orden no colocada)
+2025-11-04 19:16:46,553 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.059 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:16:46,553 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:16:46,553 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:16:58,677 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:16:59,466 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.163 (orden no colocada)
+2025-11-04 19:16:59,466 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.163 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:16:59,466 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:16:59,466 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:17:02,045 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:17:03,576 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.168 (orden no colocada)
+2025-11-04 19:17:03,576 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.168 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:17:03,576 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:17:03,576 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:17:17,153 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:17:17,932 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.967 (orden no colocada)
+2025-11-04 19:17:17,932 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.967 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:17:17,933 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:17:17,933 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:17:19,428 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:17:20,210 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.132 (orden no colocada)
+2025-11-04 19:17:20,210 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.132 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:17:20,210 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:17:20,210 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:17:31,566 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:17:32,357 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.183 (orden no colocada)
+2025-11-04 19:17:32,357 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.183 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:17:32,357 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:17:32,357 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:17:33,499 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:17:34,287 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.302 (orden no colocada)
+2025-11-04 19:17:34,288 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.302 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:17:34,288 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:17:34,288 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:17:46,492 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:17:47,994 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.124 (orden no colocada)
+2025-11-04 19:17:47,994 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.124 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:17:47,994 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:17:47,994 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:17:50,592 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:17:51,379 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.345 (orden no colocada)
+2025-11-04 19:17:51,380 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.345 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:17:51,380 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:17:51,380 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:00,876 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:18:02,386 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.118 (orden no colocada)
+2025-11-04 19:18:02,386 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.118 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:02,386 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:02,387 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:04,252 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:18:05,035 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.294 (orden no colocada)
+2025-11-04 19:18:05,036 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.294 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:05,036 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:05,036 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:17,155 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:18:17,944 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.954 (orden no colocada)
+2025-11-04 19:18:17,944 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.954 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:17,944 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:17,945 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:19,104 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:18:19,904 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.259 (orden no colocada)
+2025-11-04 19:18:19,904 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.259 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:19,904 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:19,904 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:30,129 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:18:32,356 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.961 (orden no colocada)
+2025-11-04 19:18:32,356 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.961 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:32,356 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:32,356 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:33,883 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:18:35,382 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.290 (orden no colocada)
+2025-11-04 19:18:35,382 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.290 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:35,382 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:35,382 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:47,427 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:18:48,938 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.078 (orden no colocada)
+2025-11-04 19:18:48,938 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.078 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:48,939 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:48,939 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:50,104 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:18:50,892 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.370 (orden no colocada)
+2025-11-04 19:18:50,892 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.370 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:18:50,892 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:18:50,892 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:18:58,925 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:19:00,415 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.072 (orden no colocada)
+2025-11-04 19:19:00,415 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.072 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:00,415 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:00,415 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:19:01,925 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:19:03,422 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.359 (orden no colocada)
+2025-11-04 19:19:03,422 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.359 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:03,422 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:03,422 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:19:18,062 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:19:19,563 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.922 (orden no colocada)
+2025-11-04 19:19:19,563 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.922 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:19,563 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:19,563 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:19:20,412 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:19:21,193 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.292 (orden no colocada)
+2025-11-04 19:19:21,194 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.292 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:21,194 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:21,194 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:19:34,753 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:19:36,241 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.889 (orden no colocada)
+2025-11-04 19:19:36,242 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=0.889 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:36,242 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:36,242 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:19:37,031 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:19:38,539 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.309 (orden no colocada)
+2025-11-04 19:19:38,539 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.309 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:38,540 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:38,540 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:19:49,066 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:19:49,845 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.000 (orden no colocada)
+2025-11-04 19:19:49,845 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.000 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:49,845 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:49,845 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:19:51,721 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:19:52,521 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.340 (orden no colocada)
+2025-11-04 19:19:52,521 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.340 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:19:52,522 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:19:52,522 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:20:03,927 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:20:04,707 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.052 (orden no colocada)
+2025-11-04 19:20:04,707 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.052 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:20:04,707 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:20:04,707 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:20:06,211 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:20:07,741 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.225 (orden no colocada)
+2025-11-04 19:20:07,742 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.225 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:20:07,742 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:20:07,742 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:20:18,674 [INFO] PARCIAL CHECK: sym=SOLUSDT open=8.000000 fraction=0.50 target=4.000000 adj=4.000000 step=0.000000
+2025-11-04 19:20:19,461 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.216 (orden no colocada)
+2025-11-04 19:20:19,461 [INFO] PARCIAL SKIPPED: sym=SOLUSDT r_now=1.216 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:20:19,461 [INFO] TRAILING CHECK: sym=SOLUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:20:19,461 [INFO] TRAILING SKIPPED: sym=SOLUSDT reason=not_modified_or_below_min_move
+2025-11-04 19:20:21,316 [INFO] PARCIAL CHECK: sym=BTCUSDT open=0.013000 fraction=0.50 target=0.006500 adj=0.006500 step=0.000000
+2025-11-04 19:20:22,857 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.294 (orden no colocada)
+2025-11-04 19:20:22,857 [INFO] PARCIAL SKIPPED: sym=BTCUSDT r_now=1.294 at_R=0.050 fraction=0.50 (qty_cerrar=0 o orden no colocada)
+2025-11-04 19:20:22,857 [INFO] TRAILING CHECK: sym=BTCUSDT last_sl=None next_sl=None min_move=0.1000% buffer=0.3000%
+2025-11-04 19:20:22,857 [INFO] TRAILING SKIPPED: sym=BTCUSDT reason=not_modified_or_below_min_move
