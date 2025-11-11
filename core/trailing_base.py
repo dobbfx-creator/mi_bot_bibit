@@ -1,127 +1,133 @@
-# trailing_base.py
-# Trailing inteligente con:
-# - activación por % desde la entrada (activar_pct)
-# - buffer/colchón (buffer_pct)
-# - umbral mínimo para mover SL (min_mov_sl_pct * entrada)
-# - lock opcional cuando la MFE supera cierto % (mfe_pullback_pct / lock_pct)
+# core/trailing_base.py
+# Trailing + Breakeven con API compatible con core.loop()
+# Lee parámetros desde CFG["trailing"]
 
-from typing import Dict
-
-def _cfg_section(cfg, name, plural_fallback=True, default=None):
-    if default is None:
-        default = {}
+def _cfg_get(cfg: dict, name: str, default):
     try:
-        v = cfg.get(name)
-        if isinstance(v, dict):
-            return v
-        if plural_fallback:
-            alt = f"{name}s"
-            v = cfg.get(alt)
-            if isinstance(v, dict):
-                return v
+        v = (cfg or {}).get("trailing", {})
+        return v.get(name, default)
     except Exception:
-        pass
-    return default
+        return default
 
-
-def inicializar(estado_inicial: Dict | None = None) -> Dict:
-    """Crea el estado base del trailing."""
-    est = {
-        "direccion": None,          # "LONG" | "SHORT"
-        "precio_entrada": None,
-        "sl": None,
-        "tp": None,
-        "activo": False,
-        "high_water": None,         # máximo a favor para LONG
-        "low_water": None           # mínimo a favor para SHORT
+def inicializar(cfg: dict):
+    """
+    Devuelve el estado base del trailing:
+    - activo: si el trailing está habilitado
+    - rr_trigger: R donde pasamos a BE (ej. 1.0)
+    - rr_distance: distancia del SL en R (ej. 0.5)
+    - min_mov_sl_pct: mínimo % de movimiento para notificar/aplicar
+    - buffer_pct: buffer opcional
+    """
+    return {
+        "activo": bool(_cfg_get(cfg, "enabled", True)),
+        "rr_trigger": float(_cfg_get(cfg, "trigger_R", 1.0)),   # R para BE
+        "rr_distance": float(_cfg_get(cfg, "distance_R", 0.5)), # R de trailing
+        "min_mov_sl_pct": float(_cfg_get(cfg, "min_mov_sl_pct", 0.05)),
+        "buffer_pct": float(_cfg_get(cfg, "buffer_pct", 0.0)),
+        # runtime:
+        "side": None,
+        "entry": None,
+        "stop": None,
+        "peak": None,
+        "be_moved": False,
+        "sl": None,  # último SL candidato
+        "tp": None,  # opcional si querés calcular TP por config
+        "ultimo_sl_notificado": None,
+        "ultimo_ts_notif": 0.0,
     }
-    if estado_inicial:
-        est.update(estado_inicial)
-    return est
 
-def preparar_posicion(estado: Dict, side: str, entry: float, cfg: Dict) -> Dict:
+def preparar_posicion(state: dict, side: str, entry: float, cfg: dict):
     """
-    Inicializa datos al abrir una posición.
-    No fija SL/TP aquí (el backtest ya los calcula); sólo prepara el estado.
+    Setea datos de la posición: side ('LONG'/'SHORT'), precio de entrada y SL inicial
+    (derivado de la R implícita: entry-stop).
     """
-    estado = inicializar(estado)
-    estado["direccion"] = "LONG" if side.upper() == "LONG" else "SHORT"
-    estado["precio_entrada"] = float(entry)
-    # high/low de referencia parte en la entrada
-    estado["high_water"] = float(entry)
-    estado["low_water"] = float(entry)
-    # respeta sl/tp si venían en el estado (no los pisa)
-    return estado
+    s = dict(state or {})
+    sd = side.upper().strip()
+    s["side"] = "LONG" if sd.startswith("LONG") or sd.startswith("BUY") else "SHORT"
+    s["entry"] = float(entry)
 
-def actualizar(estado: Dict, precio_actual: float, cfg: Dict) -> Dict:
-    """
-    Trailing con umbral y pullback:
-    - Activa al alcanzar activar_pct (% desde la entrada).
-    - SOLO mueve el SL si el nuevo high/low supera al anterior al menos
-      min_mov_sl_pct * entrada.
-    - Aplica buffer_pct como colchón.
-    - Opcional: lock_pct/mfe_pullback_pct (para “lockear” más cuando hubo MFE grande).
-    Devuelve: {"movido": bool, "sl": float|None, "tp": float|None, "activo": bool}
-    """
-    if estado.get("precio_entrada") is None or estado.get("direccion") is None:
-        return {"movido": False, "sl": estado.get("sl"), "tp": estado.get("tp"), "activo": estado.get("activo", False)}
-
-    # --- parámetros desde cfg/trailing (en %)
-    tcfg = cfg.get("trailing", {}) if cfg else {}
-    activar_pct        = float(tcfg.get("activar_pct", 1.0)) / 100.0   # % de ganancia para activar trailing
-    buffer_pct         = float(tcfg.get("buffer_pct", 0.30)) / 100.0   # colchón
-    min_mov_sl_pct     = float(tcfg.get("min_mov_sl_pct", 0.10)) / 100.0  # % interpretado como 0.10% (igual que activar_pct)
-    mfe_pullback_pct   = float(tcfg.get("mfe_pullback_pct", 0.0)) / 100.0  # opcional
-    lock_pct           = float(tcfg.get("lock_pct", 0.0)) / 100.0          # opcional
-
-    direccion   = estado["direccion"]
-    entrada     = float(estado["precio_entrada"])
-    sl_actual   = estado.get("sl")
-    movido      = False
-
-    # Ganancia actual en %
-    if direccion == "LONG":
-        ganancia_pct = (precio_actual / entrada) - 1.0
+    # SL inicial desde CFG riesgo.stop_pct
+    stop_pct = float(((cfg or {}).get("riesgo", {}) or {}).get("stop_pct", 2.0)) / 100.0
+    if s["side"] == "LONG":
+        s["stop"] = float(entry) * (1.0 - stop_pct)
     else:
-        ganancia_pct = (entrada / precio_actual) - 1.0
+        s["stop"] = float(entry) * (1.0 + stop_pct)
 
-    # Activación del trailing
-    if not estado.get("activo", False) and ganancia_pct >= activar_pct:
-        estado["activo"] = True
+    s["peak"] = float(entry)
+    s["be_moved"] = False
+    s["sl"] = None
+    s["tp"] = None
+    return s
 
-    if direccion == "LONG":
-        # Nuevo high a favor
-        prev_hw = float(estado.get("high_water") or entrada)
-        if precio_actual > prev_hw:
-            # ¿subió lo suficiente vs el último high? (umbral mínimo)
-            if (precio_actual - prev_hw) >= (min_mov_sl_pct * entrada):
-                estado["high_water"] = precio_actual
-                if estado["activo"]:
-                    nuevo_sl = precio_actual * (1.0 - buffer_pct)
-                    if (sl_actual is None) or (nuevo_sl > sl_actual):
-                        estado["sl"] = nuevo_sl
-                        movido = True
-        # Pullback/lock opcional si la MFE ya es grande
-        if mfe_pullback_pct > 0.0 and ganancia_pct >= mfe_pullback_pct and lock_pct > 0.0:
-            lock_price = entrada * (1.0 + lock_pct)
-            if (estado.get("sl") or 0.0) < lock_price:
-                estado["sl"] = lock_price
-                movido = True
+def _rr_now(side: str, entry: float, stop: float, price: float) -> float:
+    risk = abs(entry - stop)
+    if risk <= 0:
+        return 0.0
+    if side == "LONG":
+        return (price - entry) / risk
+    else:
+        return (entry - price) / risk
 
-    else:  # SHORT
-        prev_lw = float(estado.get("low_water") or entrada)
-        if precio_actual < prev_lw:
-            if (prev_lw - precio_actual) >= (min_mov_sl_pct * entrada):
-                estado["low_water"] = precio_actual
-                if estado["activo"]:
-                    nuevo_sl = precio_actual * (1.0 + buffer_pct)
-                    if (sl_actual is None) or (nuevo_sl < sl_actual):
-                        estado["sl"] = nuevo_sl
-                        movido = True
-        if mfe_pullback_pct > 0.0 and ganancia_pct >= mfe_pullback_pct and lock_pct > 0.0:
-            lock_price = entrada * (1.0 - lock_pct)
-            if (estado.get("sl") or 9e99) > lock_price:
-                estado["sl"] = lock_price
-                movido = True
+def actualizar(state: dict, price: float, cfg: dict):
+    """
+    Actualiza el trailing/BE y devuelve un dict:
+      {"activo": bool, "sl": float|None, "tp": float|None, "movido": bool}
+    """
+    if not state or not state.get("activo", True):
+        return {"activo": False, "sl": None, "tp": None, "movido": False}
 
-    return {"movido": movido, "sl": estado.get("sl"), "tp": estado.get("tp"), "activo": estado.get("activo", False)}
+    side  = state["side"]
+    entry = float(state["entry"])
+    stop0 = float(state["stop"])
+    rr_trigger  = float(state.get("rr_trigger", 1.0))
+    rr_distance = float(state.get("rr_distance", 0.5))
+
+    moved = False
+    sl = state.get("sl", None)  # último SL candidato
+    tp = state.get("tp", None)
+
+    # BE si alcanza rr_trigger
+    rr = _rr_now(side, entry, stop0, float(price))
+    if rr >= rr_trigger and not state.get("be_moved", False):
+        new_sl = entry
+        if side == "LONG":
+            if new_sl > stop0:
+                stop0 = new_sl
+                moved = True
+        else:
+            if new_sl < stop0:
+                stop0 = new_sl
+                moved = True
+        state["be_moved"] = True
+        sl = stop0
+
+    # Si no movimos a BE, no trailing todavía
+    if not state.get("be_moved", False):
+        state["sl"] = sl
+        state["stop"] = stop0
+        return {"activo": True, "sl": sl, "tp": tp, "movido": moved}
+
+    # Trailing luego de BE
+    risk = abs(entry - stop0 if state["be_moved"] else entry - state["stop"])
+    base_risk = abs(entry - state["stop"])
+    if base_risk <= 0:
+        state["sl"] = sl
+        return {"activo": True, "sl": sl, "tp": tp, "movido": moved}
+
+    if side == "LONG":
+        state["peak"] = max(float(state.get("peak", entry)), float(price))
+        new_sl = state["peak"] - (rr_distance * base_risk)
+        # monotónico (no retroceder SL)
+        if sl is None or new_sl > float(sl):
+            sl = new_sl
+            moved = True
+    else:
+        state["peak"] = min(float(state.get("peak", entry)), float(price))
+        new_sl = state["peak"] + (rr_distance * base_risk)
+        if sl is None or new_sl < float(sl):
+            sl = new_sl
+            moved = True
+
+    state["sl"] = sl
+    state["stop"] = stop0
+    return {"activo": True, "sl": sl, "tp": tp, "movido": moved}
